@@ -1,0 +1,25 @@
+  
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #burger-pic {
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .list-btn {
+    position: relative;
+    float: right;
+  }
+  
+  .container {
+    justify-content: center;
+  }

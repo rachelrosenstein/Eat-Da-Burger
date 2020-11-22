@@ -1,0 +1,42 @@
+<h1>Welcome to Eat-Da-Burger!</h1>
+
+<img
+    src="https://cdn.vox-cdn.com/thumbor/M73Kq6aD-kvuRDy_yvRLozYu2xc=/0x0:500x333/1200x900/filters:focal(210x127:290x207)/cdn.vox-cdn.com/uploads/chorus_image/image/59976555/dmk.6.jpg">
+
+<div class="burgers">
+    <h2>Burgers that are ready to be devoured:</h2>
+
+    <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger devoured=false}}
+        {{/unless}}
+        {{/each}}
+    </ul>
+</div>
+
+<div class="devoured">
+    <h2>Burgers that have been devoured:</h2>
+
+    <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger devoured=true}}
+        {{/if}}
+        {{/each}}
+    </ul>
+</div>
+
+
+<div class="adder">
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+        <div class="form-group">
+            <label for="burg">Burger Name:</label>
+            <input type="text" id="burg" name="name">
+        </div>
+
+        <button type="submit">Add Burger</button>
+    </form>
+</div>
