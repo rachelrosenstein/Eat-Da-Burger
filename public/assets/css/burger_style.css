@@ -1,25 +1,19 @@
-  
-* {
-    box-sizing: border-box;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  #burger-pic {
-    justify-content: center;
-    width: 300px;
-    height: 300px;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  .list-btn {
-    position: relative;
-    float: right;
-  }
-  
-  .container {
-    justify-content: center;
-  }
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
